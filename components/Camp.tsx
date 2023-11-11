@@ -61,7 +61,7 @@ const Camp = () => {
           
         />
         <CampSite 
-          backgroundImage="bg-bg-img-2"
+          backgroundImage="bg-bg-img-6"
           title="Canada Accomodation"
           subtitle=""
         
