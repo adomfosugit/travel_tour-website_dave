@@ -53,7 +53,7 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Call', value: '0506259398' },
+    { label: 'Call', value: '0558900748' },
     { label: 'Call', value: '0240519345' },
     { label: 'For Assistance Call', value: '0558900748' },
     { label: 'Email', value: 'goodlifeservices52@gmail.com' },
