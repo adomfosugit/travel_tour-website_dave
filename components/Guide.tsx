@@ -85,6 +85,7 @@ const Guide = () => {
         
 
         <form
+          id = 'conct'
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col w-full  '
