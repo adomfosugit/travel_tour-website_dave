@@ -3,18 +3,13 @@ import Image from 'next/image'
 import Button from './Button'
 
 const Hero = () => {
-<<<<<<< HEAD
   const scrollToSection = () => {
     const targetSection = document.getElementById('sectionToScroll');
   
     if (targetSection) {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     }
-=======
-const scrollToSection = () => {
-    const targetSection = document.getElementById('conct');
-    targetSection.scrollIntoView({ behavior: 'smooth' });
->>>>>>> 40a4179ca48db924907143426b9ce0c68b23bf1c
+
   };
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
@@ -30,19 +25,10 @@ const scrollToSection = () => {
        
 
         <div className="flex flex-col w-full gap-3 sm:flex-row mt-7">
-<<<<<<< HEAD
         
           <button className='btn_blue rounded-full font-bold'
            onClick={scrollToSection}>Book Appointment</button>
-=======
-          <Button 
-            type="button" 
-            title="Book Appointment" 
-            variant="btn_blue" 
-            onClick = {scrollToSection}"
 
-          />
->>>>>>> 40a4179ca48db924907143426b9ce0c68b23bf1c
          
         </div>
       </div>
