@@ -20,6 +20,8 @@ const Hero = () => {
             type="button" 
             title="Book Appointment" 
             variant="btn_blue" 
+            onClick = scrollToSection(conct)"
+
           />
          
         </div>
