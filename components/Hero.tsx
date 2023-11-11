@@ -1,7 +1,15 @@
+'use client'
 import Image from 'next/image'
 import Button from './Button'
 
 const Hero = () => {
+  const scrollToSection = () => {
+    const targetSection = document.getElementById('sectionToScroll');
+  
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
   
@@ -16,11 +24,9 @@ const Hero = () => {
        
 
         <div className="flex flex-col w-full gap-3 sm:flex-row mt-7">
-          <Button 
-            type="button" 
-            title="Book Appointment" 
-            variant="btn_blue" 
-          />
+        
+          <button className='btn_blue rounded-full font-bold'
+           onClick={scrollToSection}>Book Appointment</button>
          
         </div>
       </div>

@@ -16,7 +16,7 @@ const Guide = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e:any) => {
     const { target } = e;
     const { name, value } = target;
 
@@ -26,32 +26,32 @@ const Guide = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs
       .send(
-        'service_a4ti7od',
-        'template_i36ys5d',
+        'service_45yg3k9',
+        'template_i8y95ui',
         {
           from_name: form.name,
-          to_name: "Adom Fosu",
+          phone: form.phone,
           email: form.email,
-          to_email: "adomfosu2000@gmail.com",
-          message: form.message,
+           message: form.message,
         },
-        'qKcs0-60JEaHBzgTv'
+        '56Cr-LdVse8KVNdef'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          alert("Thank you. We will contact you on 0558900748.");
 
           setForm({
             name: "",
             email: "",
             message: "",
+            phone:""
           });
         },
         (error) => {
@@ -88,6 +88,7 @@ const Guide = () => {
           ref={formRef}
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col w-full  '
+          id='sectionToScroll'
         >
         <p className='text-blue-600 font-bold flex'>Get in touch</p>
           <label className='flex flex-col'>
@@ -129,7 +130,7 @@ const Guide = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='Please Leave a Message'
-              className='bg-gray-100 py-4 px-6 placeholder:text-secondary text-gray-900 ring-1 ring-blue-600 rounded-lg outline-none border-none font-medium'
+              className='bg-gray-100 py-4 px-6 mb-4 placeholder:text-secondary text-gray-900 ring-1 ring-blue-600 rounded-lg outline-none border-none font-medium'
             />
             
           </label>
