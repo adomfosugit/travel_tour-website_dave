@@ -10,58 +10,52 @@ interface CampProps {
 
 const CampSite = ({ backgroundImage, title, subtitle }: CampProps) => {
   return (
-    <div className={`h-[300px] w-[300px]  ${backgroundImage} bg-cover bg-no-repeat `}>
-     <div className="flex h-full flex-col items-start justify-between p-6 lg:px-20 lg:py-10">
-      <div className="flexCenter gap-4">
-        
-        <div className="flex flex-col gap-1">
-          <p className="bold-18 text-white whitespace-nowrap">{title}</p>
-          <p className="regular-14 text-white">{subtitle}</p>
-        </div>
-      </div>
+    <div className="ring-2 ring-blue-800 p-2 m-2 rounded-lg flex flex-col" >
+      <div className="h-[200px] w-[200px]">
 
-      
-     </div>
+      <Image src={backgroundImage} width={300} height={300} alt="picture" className="mb-2 h-full rounded-lg w-full"/>
+      </div>
+     <p className="text-black font-bold">{title}</p>
     </div>
   )
 }
 
 const Camp = () => {
   return (
-    <section className=" relative flex flex-col lg:-mb-[200px]">
+    <section className=" relative flex flex-col lg:-mb-[300px]">
       <h2 className="bold-40 ">Our Services</h2>
-      <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
+      <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-2 overflow-x-auto lg:h-[400px] xl:h-[640px] ">
         <CampSite 
-          backgroundImage="bg-bg-img-1"
+          backgroundImage="/visa.jpg"
           title="Visa Application"
           subtitle=""
         />
         <CampSite 
-          backgroundImage="bg-bg-img-2"
+          backgroundImage="/school.jpg"
           title="School Application"
           subtitle=""
           
         />
         <CampSite 
-          backgroundImage="bg-bg-img-3"
+          backgroundImage="/bank.jpg"
           title="Bank Statement"
           subtitle=""
           
         />
         <CampSite 
-          backgroundImage="bg-bg-img-4"
+          backgroundImage="/passport.jpg"
           title="Passport"
           subtitle=""
         
         />
         <CampSite 
-          backgroundImage="bg-bg-img-5"
+          backgroundImage="/cert.jpg"
           title="Birth Certificate"
           subtitle=""
           
         />
         <CampSite 
-          backgroundImage="bg-bg-img-6"
+          backgroundImage="/acc.jpg"
           title="Canada Accomodation"
           subtitle=""
         
