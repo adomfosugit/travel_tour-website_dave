@@ -5,10 +5,15 @@ import Button from "./Button"
 
 const Navbar = () => {
   return (
-    <nav className="flexBetween max-container padding-container relative z-30 py-5">
+    <nav className="flexBetween max-container  relative z-30 py-1">
+
       <Link href="/">
-        <span className= 'text-lg font-bold '>GOODLIFE 
-        <p className='text-sm font-semibold text-blue-600'>Travel and Tour</p></span>
+        <div className="h-[200px] flex">
+
+        <Image src='/vectorize.svg' alt="logo" width={200} height={200}/>
+        
+        </div>
+      
       </Link>
 
     
